@@ -38,7 +38,7 @@ public class Crocodile extends Actor
     int imageIndex = 0;
     public void animateCrocodile()
     {
-        if(animationTimer.millisElapsed()<100)
+        if(animationTimer.millisElapsed()<120)
         {
             return;
         }
