@@ -38,7 +38,7 @@ public class Crocodile extends Actor
     int imageIndex = 0;
     public void animateCrocodile()
     {
-        if(animationTimer.millisElapsed()<120)
+        if(animationTimer.millisElapsed()<100)
         {
             return;
         }
@@ -57,12 +57,12 @@ public class Crocodile extends Actor
     {
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-3);
+            move(-2);
             facing = "left";
         }
         else if(Greenfoot.isKeyDown("right"))
         {
-            move(3);
+            move(2);
             facing = "right";
         }
         //Remove fish if crocodile touches it
